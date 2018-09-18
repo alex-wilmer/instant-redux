@@ -1,21 +1,24 @@
 {
-  "name": "redux-primitives",
-  "version": "0.0.0",
+  "name": "terms-to-redux",
+  "version": "0.1.0",
   "description": "Utilities for minimizing redux boilerplate.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require babel_register src/scaffold.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:alex-wilmer/redux-primitives.git"
+    "url": "git@github.com:alex-wilmer/instant-redux.git"
   },
   "author": "alex-wilmer",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
+    "lodash": "^4.17.10",
     "redux-actions": "^2.6.1"
   },
   "devDependencies": {
+    "@babel/register": "^7.0.0",
+    "mocha": "^5.2.0",
     "prettier": "^1.14.0"
   }
 }
