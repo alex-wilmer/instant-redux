@@ -42,7 +42,7 @@ export let makeReducer = ({
       [actions.fetchSuccess]: (state, { payload }) => ({
         loading: false,
         error: false,
-        ...payload,
+        data: payload,
       }),
       [actions.fetchFailure]: (state, { payload }) => ({
         ...state,
@@ -51,6 +51,7 @@ export let makeReducer = ({
       }),
       [actions.set]: (state, { payload }) => payload,
       [actions.assign]: (state, { payload }) => ({ ...state, ...payload }),
+      // TODO: remove this in favor of custom immer producer
       [actions.assigndeep]: (state, { payload }) => ({
         ...state,
         [payload.key]: { ...(state[payload.key] || {}), ...payload.value },

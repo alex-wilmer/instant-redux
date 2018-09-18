@@ -1,6 +1,6 @@
 # terms-to-redux
 
-# install
+# Install
 
 ```
 # yarn
@@ -17,12 +17,12 @@ that can occur in your application. The vast majority of actions are primitive
 updates, collection updates, async events or workflow triggers.
 
 The main advantage of redux is the semantically explicit action log that makes it
-easy to understand what happened during the lifetime of the app. Since basic events
+easy to understand what happened during the lifetime of an application. Since basic events
 and updates can be reasonably assumed ahead of time, a simple namespace can preserve
 a semantically accurate action log.
 
 `terms-to-redux` can scaffold everything a redux application would ever need simply
-by providing an array of `domains` aka namespaces
+by providing an array of `domains` aka namespaces.
 
 ## Basic Usage
 
@@ -157,13 +157,13 @@ store.getState()
 ```
 
 
-## api
+## Api
 
 #### scaffold
 
-#### common verbs
+#### commonVerbs
 
-#### common qualifiers
+#### commonAdverbs
 
 #### makeActions
 
